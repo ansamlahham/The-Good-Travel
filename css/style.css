@@ -1,0 +1,26 @@
+h1{
+    font-size: 40px;
+/* padding-left: 500px; */
+font-family: Righteous;
+text-align: center;
+background-color: rgba(202, 240, 251, 255);
+color: white;
+}
+
+
+#placeForm{
+    padding-top: 50px;
+    background-color: #5d4b7696;
+    color: #fffdfe88;
+    font-family: Righteous;
+    font-size: 25px;
+    float: left;
+    width: 300px;
+    height: 500px;
+    padding-left: 50px;
+}
+
+footer{
+    color:  #f376a288;
+}
+
