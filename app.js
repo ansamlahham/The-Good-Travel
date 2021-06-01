@@ -23,13 +23,13 @@ function submitter(event) {
     let image=event.target.image.value;
     let tripPlace=event.target.tripPlace.value;
     let transport=event.target.transport.value;
-let currentplace = new place(image , placeName , tripPlace, transport);
-createTable();
+    let currentplace = new place(image , placeName , tripPlace, transport);
+// createTable();
 }
+// console.log(submitter);
 
 function createTable() {
-  
-  
+
 
 for (let i = 0; i< images.length; i++) {
     let tr = document.createElement('tr');
@@ -40,18 +40,7 @@ for (let i = 0; i< images.length; i++) {
     // table.appendChild(tr1);
     // tr1.textContent=allPlaces[i];
 
-    // let th1 = document.createElement('th');
-    // tr.appendChild(th1);
-    // th1.textContent=images[i];
-
-    // let th2 = document.createElement('th');
-    // tr.appendChild(th2);
-    // th2.textContent=allPlaces;
-
-
-    // let th2 = document.createElement('th');
-    // tr.appendChild(th2);
-    // th2.textContent=images[i];
+    
 
     // let th3 = document.createElement('th');
     // tr.appendChild(th3);
@@ -65,12 +54,23 @@ for (let i = 0; i< images.length; i++) {
 
 }
 createTable();
-let tr = document.createElement('tr');
 
 function render() {
-    let th =document.createElement('th');
-    tr.appendChild('th');
-    th.textContent=this.placeName, this.tripPlace,this.transport;
+    let tr = document.createElement('tr');
+    table.appendChild(tr);
+  
+
+    let th1 = document.createElement('th');
+    tr.appendChild(th1);
+    th1.textContent=this.placeName;
+
+    let th2 = document.createElement('th');
+    tr.appendChild(th2);
+    th2.textContent=this.tripPlace;
+
+    let th3 = document.createElement('th');
+    tr.appendChild(th3);
+    th3.textContent=this.transport;
 }
 // render();
 
